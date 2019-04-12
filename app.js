@@ -60,7 +60,3 @@ app.post('/failure', (req, res) => {
 app.listen(process.env.PORT || 3000, () => {
     console.log("Server is running on port 3000");
 });
-
-//a27f96ac28fca10f143dd96df3adb1ae-us20
-
-//48058cc463
