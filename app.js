@@ -1,5 +1,5 @@
 if (process.env.NODE_ENV !== 'production') {
-    require('dotenv').load();
+    require('dotenv').config();
 }
 
 const bodyParser = require('body-parser');
@@ -39,7 +39,7 @@ app.post('/', (req, res) => {
         url: "https://us20.api.mailchimp.com/3.0/lists/" + process.env.MAILCHIMP_ID,
         method: "POST",
         headers: {
-            "Authorization": "omar1 " + MAILCHIMP_KEY
+            "Authorization": "omar1 " + process.env.MAILCHIMP_KEY
         },
         body: jsonData
     }
