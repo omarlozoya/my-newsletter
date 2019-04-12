@@ -32,17 +32,10 @@ app.post('/', (req, res) => {
     var jsonData = JSON.stringify(data);
 
     var options = {
-<<<<<<< HEAD
         url: "https://us20.api.mailchimp.com/3.0/lists/" + process.env.MAILCHIMP_ID,
         method: "POST",
         headers: {
             "Authorization": "omar1 " + MAILCHIMP_KEY
-=======
-        url: "https://us20.api.mailchimp.com/3.0/lists/48058cc463",
-        method: "POST",
-        headers: {
-            "Authorization": "omar1 a27f96ac28fca10f143dd96df3adb1ae-us20"
->>>>>>> 4ab504823435e16c16b8e40cbc7fa93127af57f6
         },
         body: jsonData
     }
