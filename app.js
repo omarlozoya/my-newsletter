@@ -1,3 +1,7 @@
+if (process.env.NODE_ENV !== 'production') {
+    require('dotenv').load();
+}
+
 const bodyParser = require('body-parser');
 const express = require('express');
 const request = require('request');
